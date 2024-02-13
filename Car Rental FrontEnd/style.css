@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffffff;
+} 
+nav {
+  display: flex;
+  list-style-type: none;
+}
+div.content {
+  display: block;  
+  margin-left: 200px;
+  margin-top: 70px;
+  
+}
+div.content p {
+  font-size: 13px;
+  margin-top: 10px;
+  display: flex;
+}
+div.content h3{
+  color: red;
+  margin-top: -7px; 
+}
+div.content h2{
+  margin-top: -5px; 
+}
+div.content button {
+  padding: 4px;
+  /* border-color: #000000a5;  */
+  /* color: rgb(0, 0, 0); */
+  background-color: rgb(255, 221, 0);
+}
+div.content button a{
+  color: black;
+  text-decoration: none;
+}
+div.content button:hover{
+  /* color: rgb(255, 221, 0); */
+  background-color: rgb(0, 0, 0);
+}
+div.content button a:hover{
+  color: rgb(255, 221, 0);
+  /* background-color: rgb(0, 0, 0); */
+}
+div.content img{
+  margin-left: 250px;
+  margin-top: -240px;
+  width: 500px;
+  height: 300px;
+}
+
+header, main, footer {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+header h1 {
+  color: red; /* Yellow color */
+}
+
+header p {
+  color: #333; /* Black color */
+}
+
+form {
+  background-color: #f8f9fa; /* Light grayish color */
+  padding:  20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
+#message{
+  height: 50px;
+}
+label {
+  font-weight: bold;
+  color: #000000; /* Yellow color */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #f39c12; /* Yellow color */
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #333; /* Black color */
+}
+
+button {
+  color: #000000; /* Yellow color */
+  background-color: rgb(255, 221, 0);/* Black color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000; /* Black color */
+  color: rgb(255, 221, 0); /* Yellow color */
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #666; /* Dark gray color */
+}

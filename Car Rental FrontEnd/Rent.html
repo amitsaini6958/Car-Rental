@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rent.css">
+    <script src="rent.js"></script>
+</head>
+<body>
+    <div class="container">
+      <div class="form-container">
+        <form id="rentCarForm" onsubmit="return validateForm()">
+          <div class="row">
+            <label for="">Enter Your Details</label>
+            <div class="col">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" class="form-control" placeholder="First name" required>
+            </div>
+            <div class="col">
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" class="form-control" placeholder="Last name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="car">Select Car:</label>
+              <select id="car" name="car" required>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="hatchback">Hatchback</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="days">Rental Days:</label>
+              <input type="number" id="days" name="days" min="1" required>
+            </div>
+          </div>
+          <div class="total-box">
+            <p>Total Amount:</p>
+            <input type="text" placeholder="Total Amount will be shown here">
+          </div>
+          <div class="order">
+            <input class="button" type="submit" value="Order">
+          </div>
+        </form>
+      </div>
+      <div class="car-image-container">
+        <img src="images/image6.jpg" alt="Car Image">
+      </div>
+    </div>
+</body>
+</html>
